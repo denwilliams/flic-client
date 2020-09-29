@@ -27,4 +27,7 @@ client.on("ButtonDown", console.log);
 client.on("ButtonClick", console.log);
 client.on("ButtonStatusChanged", console.log);
 client.on("ButtonBatteryPercentage", console.log);
+
+// Disconnect from all buttons
+await client.stop();
 ```
