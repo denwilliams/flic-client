@@ -8,7 +8,7 @@ Because the [original one](https://raw.githubusercontent.com/50ButtonsEach/flicl
 
 ## Requirements
 
-Uses Typescript compilation
+Uses Typescript compilation target ES2017, so requires NodeJS >= 8.10.
 
 ## Usage
 
