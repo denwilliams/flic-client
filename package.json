@@ -1,6 +1,6 @@
 {
   "name": "flic-client",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Typescript based, promise compatible client for the Flic Linux service",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

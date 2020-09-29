@@ -4,7 +4,7 @@ import {
   CreateConnectionChannelErrorValues,
   ConnectionStatusValues,
   BluetoothControllerStateValues,
-  BdAddrType,
+  BdAddrTypeValues,
   ScanWizardResultValues,
   DisconnectReasonValues,
   RemovedReasonValues,
@@ -122,7 +122,7 @@ export type FlicEvent =
   | AdvertisementPacketEvent
   | BluetoothControllerStateChangeEvent
   | ConnectionStatusChangedEvent
-  | CreateConnectionChannelResponse
+  | CreateConnectionChannelResponseEvent
   | ButtonEvent
   | ButtonDeletedEvent
   | NewVerifiedButtonEvent

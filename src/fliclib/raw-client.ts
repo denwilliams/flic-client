@@ -324,7 +324,7 @@ export class FlicRawClient {
         break;
       }
       case FlicEventOpcodes.GetInfoResponse: {
-        evt = {
+        const giEvent = {
           bluetoothControllerState: readEnum<BluetoothControllerStateValues>(
             "BluetoothControllerState"
           ),
@@ -336,9 +336,10 @@ export class FlicRawClient {
           currentlyNoSpaceForNewConnection: readBoolean(),
           bdAddrOfVerifiedButtons: new Array(readUInt16()),
         };
-        for (var i = 0; i < evt.bdAddrOfVerifiedButtons.length; i++) {
-          evt.bdAddrOfVerifiedButtons[i] = readBdAddr();
+        for (var i = 0; i < giEvent.bdAddrOfVerifiedButtons.length; i++) {
+          giEvent.bdAddrOfVerifiedButtons[i] = readBdAddr();
         }
+        evt = giEvent;
         this.onEvent(opcode, evt);
         break;
       }
