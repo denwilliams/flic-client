@@ -1,9 +1,12 @@
 {
   "name": "flic-client",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Typescript based, promise compatible client for the Flic Linux service",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "tiny-typed-emitter": "^2.0.3"
   },
